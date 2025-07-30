@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="458.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/24" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.braulioecheverria.controllers.LoginController">
+   <children>
+      <Label layoutX="260.0" layoutY="37.0" text="Bienvenido" textFill="#1d32eb">
+         <font>
+            <Font name="Bell MT" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="278.0" layoutY="94.0" text="AuthSystem Fundamentos 2025">
+         <font>
+            <Font name="Arial Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="136.0" layoutY="170.0" text="Email">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEmail" layoutX="242.0" layoutY="170.0" prefHeight="35.0" prefWidth="328.0" promptText="example@.gmailcom" />
+      <Label layoutX="93.0" layoutY="238.0" text="Password">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtPassword" layoutX="242.0" layoutY="238.0" prefHeight="35.0" prefWidth="328.0" promptText="pass1234" />
+      <Button fx:id="btnAceptar" layoutX="291.0" layoutY="322.0" mnemonicParsing="false" onAction="#eventoAceptar" text="Aceptar" textFill="#099e2c">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCancelar" layoutX="436.0" layoutY="322.0" mnemonicParsing="false" onAction="#eventoCancelar" text="Cancelar" textFill="#f2401c">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblRegistrarse" layoutX="611.0" layoutY="396.0" onMouseClicked="#eventoRegistrarse" text="Registrarse" textFill="#4f85f2">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
